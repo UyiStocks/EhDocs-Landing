@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 html,
 body {
   scroll-snap-type: y mandatory;
@@ -13,31 +14,34 @@ section {
   scroll-snap-align: start;
 }
 
+
 /* Body setup */
 body {
   background-color: antiquewhite;
   color: black;
   height: 100vh;
   line-height: 1.6;
-  scroll-behavior: smooth; /* smooth page scrolling */
+  scroll-behavior: smooth;
+  /* smooth page scrolling */
 }
 
-/* Hide skip link  */
+/* Hide skip link (optional accessibility) */
 .skip-link {
   display: none;
 }
 
-/* Sticky header */
+/* Sticky header sticky */
 .header {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 100; /* keeps it above other sections */
   background-color: antiquewhite;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 25px;
 }
+
 
 /* Logo text */
 .logo {
@@ -63,11 +67,13 @@ body {
   background: darkred;
 }
 
+
 /* Fullscreen overlay menu */
 .menu-overlay {
   position: fixed;
   inset: 0;
   background-color: rgba(250, 235, 215, 0.98);
+  /* light transparent antiquewhite */
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -113,48 +119,45 @@ body {
 .menu-links a {
   color: black;
   text-decoration: none;
+  font-size: 36px;
+  transition: color 0.3s ease;
+  font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: -1px;
   line-height: 1;
   text-align: center;
-  font-family: 'Playfair Display', serif;
-  transition: color 0.3s ease;
 }
+
 
 .menu-links a:hover {
   color: darkred;
 }
 
-/* Shared Fullscreen Section */
-.fullscreen-center {
+/* Hero section */
+.hero {
   background-color: antiquewhite;
   text-align: center;
-  min-height: 100vh;
-  display: flex;
+  height: 100vh; /* Fills full screen height */
+  display: flex; /* Enables centering */
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  box-sizing: border-box;
-  overflow: hidden;
-  font-family: 'Playfair Display', serif;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  padding: 0 20px; /* Remove top padding that pushed content down */
+  box-sizing: border-box; /* Ensures padding doesn’t add extra height */
+  overflow: hidden; /* Prevents scroll if something overflows */
 }
 
-/* Hero Section */
-.hero {
-  /* Section-specific styles only (layout inherited from .fullscreen-center) */
-}
 
 /* Hero main text */
 .hero-text {
+  font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 70px;
   color: black;
   line-height: 1.1;
   letter-spacing: 2px;
-  font-family: 'Playfair Display', serif;
 }
 
 /* Tilted word styles */
@@ -180,6 +183,7 @@ body {
 
 .hero-content p {
   font-size: 20px;
+  font-family: 'Playfair Display', serif;
   color: black;
   max-width: 600px;
   margin: 0 auto 30px;
@@ -206,24 +210,30 @@ body {
 .hero-buttons button:hover {
   background-color: darkred;
 }
-
-.build-btn,
-.donate-btn {
+.build-btn{
   font-family: 'Playfair Display', serif;
 }
 
-/* About Gallery Section */
+.donate-btn{
+  font-family: 'Playfair Display', serif;
+}
+
+/*About Gallery Section*/
+
+/* Full-screen About Section */
 .about-gallery {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 100vh;
+  align-items: center;       /* vertical center */
+  justify-content: center;   /* horizontal center */
+  flex-direction: column;    /* stack content vertically */
+  background-color: antiquewhite;
+  min-height: 100vh;         /* full screen height */
   padding: 60px 5%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
 
+/* Text section */
 .about-text {
   max-width: 600px;
   font-family: 'Playfair Display', serif;
@@ -273,14 +283,24 @@ body {
   }
 }
 
-/* Category Combined Section */
-.category-combined {
-  /* layout from .fullscreen-center */
+.category-combined{
+ background-color: antiquewhite;
+  text-align: center;
+  height: 100vh; /* Fills full screen height */
+  display: flex; /* Enables centering */
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  padding: 0 20px; /* Remove top padding that pushed content down */
+  box-sizing: border-box; /* Ensures padding doesn’t add extra height */
+  overflow: hidden; /* Prevents scroll if something overflows */
 }
+
 
 /* Category intro */
 .category-intro {
   text-align: center;
+  background-color: antiquewhite;
   font-family: 'Playfair Display', serif;
   padding: 40px 20px 10px;
   max-width: 800px;
@@ -308,6 +328,8 @@ body {
   font-family: 'Playfair Display', serif;
   padding: 20px 20px 40px;
   margin-top: -30px;
+  background-color: antiquewhite;
+  
 }
 
 .category-grid {
@@ -318,6 +340,7 @@ body {
   margin: 0 auto;
 }
 
+/* Category cards */
 .category-card {
   background: antiquewhite;
   border-radius: 15px;
@@ -329,6 +352,7 @@ body {
 .category-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 6px 18px black;
+  
 }
 
 .category-image {
@@ -366,12 +390,25 @@ body {
   }
 }
 
-/* Choose Section */
-.choose-section {
-  /* layout from .fullscreen-center */
+/*Why CHOOSE US*/
+
+.choose-section{
+ background-color: antiquewhite;
+  text-align: center;
+  min-height: 100vh; /* Fills full screen height */
+  display: flex; /* Enables centering */
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  padding: 0 20px; /* Remove top padding that pushed content down */
+  box-sizing: border-box; /* Ensures padding doesn’t add extra height */
+  overflow: hidden; /* Prevents scroll if something overflows */
+  font-family: 'Playfair Display', serif;
 }
 
+
 .why-hero-text {
+  font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 50px;
   color: darkred;
@@ -381,11 +418,13 @@ body {
   margin-top: 150px;
 }
 
+/* Each word block */
 .why-word {
   display: block;
   text-transform: uppercase;
 }
 
+/* Tilted words */
 .choose-tilt-left {
   transform: rotate(-2deg);
   color: black;
@@ -395,6 +434,8 @@ body {
   transform: rotate(3deg);
   color: orangered;
 }
+
+/*Why Story*/
 
 .why-story {
   max-width: 800px;
@@ -419,7 +460,7 @@ body {
 }
 
 .highlight-orange {
-  background-color: #ff4500;
+  background-color: #ff4500; /* red-orange */
   color: white;
   padding: 2px 6px;
   border-radius: 6px;
@@ -441,9 +482,21 @@ body {
 }
 
 /* Hire Section */
-#hiresection {
-  /* layout from .fullscreen-center */
+
+#hiresection{
+ background-color: antiquewhite;
+  text-align: center;
+  min-height: 100vh; /* Fills full screen height */
+  display: flex; /* Enables centering */
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  padding: 0 20px; /* Remove top padding that pushed content down */
+  box-sizing: border-box; /* Ensures padding doesn’t add extra height */
+  overflow: hidden; /* Prevents scroll if something overflows */
+  font-family: 'Playfair Display', serif;
 }
+
 
 .hire-section {
   text-align: center;
@@ -452,7 +505,9 @@ body {
   color: black;
 }
 
+
 .hire-section h3 {
+  font-family: 'Playfair Display', serif;
   font-size: 48px;
   font-weight: 900;
   line-height: 1.2;
@@ -463,6 +518,7 @@ body {
   position: relative;
 }
 
+/* First Span: bold, elegant emphasis */
 .highlight-one {
   color: orangered;
   font-style: italic;
@@ -470,15 +526,19 @@ body {
   padding-bottom: 5px;
 }
 
+/* Second Span: modern accent */
 .highlight-two {
   color: red-orange;
   font-weight: 700;
-  background-color: rgba(255, 69, 0, 0.08);
+  background-color: rgba(255, 69, 0, 0.08); /* subtle orange tint */
   border-radius: 10px;
   padding: 5px 10px;
 }
 
-.hire-p {
+
+/*Paragraph with text colors */
+
+.hire-p{
   margin: 20px;
 }
 
@@ -494,6 +554,7 @@ body {
   color: orangered;
 }
 
+/* Button style */
 .hire-btn {
   display: inline-block;
   margin-top: 25px;
@@ -511,10 +572,22 @@ body {
   transform: translateY(-4px);
 }
 
-/* Footer Section */
-#ehdocsfooter {
-  /* layout from .fullscreen-center */
+/*Footer Section*/
+
+  #ehdocsfooter{
+    background-color: antiquewhite;
+    font-family: 'Playfair Display', serif;
+  text-align: center;
+  height: 100vh; /* Fills full screen height */
+  display: flex; /* Enables centering */
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  padding: 0 20px; /* Remove top padding that pushed content down */
+  box-sizing: border-box; /* Ensures padding doesn’t add extra height */
+  overflow: hidden; /* Prevents scroll if something overflows */
 }
+
 
 .footer-container {
   display: grid;
@@ -579,7 +652,7 @@ body {
   color: #333;
 }
 
-/* Mobile Accordion */
+/* ========== Mobile Accordion ========== */
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
@@ -591,7 +664,7 @@ body {
   }
 
   .toggle:checked + .footer-title + .footer-list {
-    max-height: 300px;
+    max-height: 300px; /* expands smoothly */
     transition: max-height 0.4s ease-in-out;
   }
 
