@@ -455,9 +455,8 @@ body {
 
 /* Hire Section */
 
-#hiresection{
+.Hiresection{
 }
-
 
 .hire-section {
   text-align: center;
@@ -535,9 +534,8 @@ body {
 
 /*Footer Section*/
 
-  #ehdocsfooter{
+  .Ehdocsfooter{
 }
-
 
 .footer-container {
   display: grid;
