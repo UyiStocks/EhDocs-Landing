@@ -41,7 +41,7 @@ body {
 }
 
 
-/* Hide skip link (optional accessibility) */
+/* Hide skip link */
 .skip-link {
   display: none;
 }
@@ -57,7 +57,6 @@ body {
   align-items: center;
   padding: 15px 25px;
 }
-
 
 /* Logo text */
 .logo {
