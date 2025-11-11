@@ -88,7 +88,6 @@ body {
   position: fixed;
   inset: 0;
   background-color: rgba(250, 235, 215, 0.98);
-  /* light transparent antiquewhite */
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -152,16 +151,6 @@ body {
 
 /* Hero section */
 .hero {
-  background-color: antiquewhite;
-  text-align: center;
-  height: 100vh; /* Fills full screen height */
-  display: flex; /* Enables centering */
-  flex-direction: column;
-  justify-content: center; /* Centers vertically */
-  align-items: center; /* Centers horizontally */
-  padding: 0 20px; /* Remove top padding that pushed content down */
-  box-sizing: border-box; /* Ensures padding doesn’t add extra height */
-  overflow: hidden; /* Prevents scroll if something overflows */
 }
 
 
@@ -234,18 +223,7 @@ body {
 }
 
 /*About Gallery Section*/
-
-/* Full-screen About Section */
 .about-gallery {
-  display: flex;
-  align-items: center;       /* vertical center */
-  justify-content: center;   /* horizontal center */
-  flex-direction: column;    /* stack content vertically */
-  background-color: antiquewhite;
-  min-height: 100vh;         /* full screen height */
-  padding: 60px 5%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
 }
 
 /* Text section */
@@ -299,16 +277,6 @@ body {
 }
 
 .category-combined{
- background-color: antiquewhite;
-  text-align: center;
-  height: 100vh; /* Fills full screen height */
-  display: flex; /* Enables centering */
-  flex-direction: column;
-  justify-content: center; /* Centers vertically */
-  align-items: center; /* Centers horizontally */
-  padding: 0 20px; /* Remove top padding that pushed content down */
-  box-sizing: border-box; /* Ensures padding doesn’t add extra height */
-  overflow: hidden; /* Prevents scroll if something overflows */
 }
 
 
@@ -408,17 +376,6 @@ body {
 /*Why CHOOSE US*/
 
 .choose-section{
- background-color: antiquewhite;
-  text-align: center;
-  min-height: 100vh; /* Fills full screen height */
-  display: flex; /* Enables centering */
-  flex-direction: column;
-  justify-content: center; /* Centers vertically */
-  align-items: center; /* Centers horizontally */
-  padding: 0 20px; /* Remove top padding that pushed content down */
-  box-sizing: border-box; /* Ensures padding doesn’t add extra height */
-  overflow: hidden; /* Prevents scroll if something overflows */
-  font-family: 'Playfair Display', serif;
 }
 
 
@@ -499,17 +456,6 @@ body {
 /* Hire Section */
 
 #hiresection{
- background-color: antiquewhite;
-  text-align: center;
-  min-height: 100vh; /* Fills full screen height */
-  display: flex; /* Enables centering */
-  flex-direction: column;
-  justify-content: center; /* Centers vertically */
-  align-items: center; /* Centers horizontally */
-  padding: 0 20px; /* Remove top padding that pushed content down */
-  box-sizing: border-box; /* Ensures padding doesn’t add extra height */
-  overflow: hidden; /* Prevents scroll if something overflows */
-  font-family: 'Playfair Display', serif;
 }
 
 
@@ -590,17 +536,6 @@ body {
 /*Footer Section*/
 
   #ehdocsfooter{
-    background-color: antiquewhite;
-    font-family: 'Playfair Display', serif;
-  text-align: center;
-  height: 100vh; /* Fills full screen height */
-  display: flex; /* Enables centering */
-  flex-direction: column;
-  justify-content: center; /* Centers vertically */
-  align-items: center; /* Centers horizontally */
-  padding: 0 20px; /* Remove top padding that pushed content down */
-  box-sizing: border-box; /* Ensures padding doesn’t add extra height */
-  overflow: hidden; /* Prevents scroll if something overflows */
 }
 
 
@@ -667,7 +602,7 @@ body {
   color: #333;
 }
 
-/* ========== Mobile Accordion ========== */
+/* Mobile Accordion */
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
