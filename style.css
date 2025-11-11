@@ -18,6 +18,7 @@ section {
 /* Body setup */
 body {
   background-color: antiquewhite;
+  font-family: 'Playfair Display', serif;
   color: black;
   height: 100vh;
   line-height: 1.6;
@@ -69,7 +70,6 @@ body {
 .menu-btn {
   background: black;
   color: white;
-  font-family: 'Playfair Display', serif;
   border: none;
   border-radius: 20px;
   padding: 10px 18px;
@@ -111,7 +111,6 @@ body {
   border-radius: 20px;
   padding: 8px 16px;
   font-size: 16px;
-  font-family: 'Playfair Display', serif;
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -131,11 +130,9 @@ body {
 }
 
 .menu-links a {
-  color: black;
   text-decoration: none;
   font-size: 36px;
   transition: color 0.3s ease;
-  font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 3rem;
   text-transform: uppercase;
@@ -156,10 +153,8 @@ body {
 
 /* Hero main text */
 .hero-text {
-  font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 70px;
-  color: black;
   line-height: 1.1;
   letter-spacing: 2px;
 }
@@ -187,8 +182,6 @@ body {
 
 .hero-content p {
   font-size: 20px;
-  font-family: 'Playfair Display', serif;
-  color: black;
   max-width: 600px;
   margin: 0 auto 30px;
 }
@@ -229,13 +222,11 @@ body {
 /* Text section */
 .about-text {
   max-width: 600px;
-  font-family: 'Playfair Display', serif;
 }
 
 .about-text h2 {
   font-size: 2.8rem;
   font-weight: bold;
-  color: black;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
@@ -283,8 +274,6 @@ body {
 /* Category intro */
 .category-intro {
   text-align: center;
-  background-color: antiquewhite;
-  font-family: 'Playfair Display', serif;
   padding: 40px 20px 10px;
   max-width: 800px;
   margin: 0 auto;
@@ -292,7 +281,6 @@ body {
 
 .category-intro h2 {
   font-size: 1.8em;
-  color: black;
   margin-bottom: 15px;
   font-weight: 800;
 }
@@ -308,11 +296,8 @@ body {
 /* Category grid layout */
 .category-section {
   text-align: center;
-  font-family: 'Playfair Display', serif;
   padding: 20px 20px 40px;
   margin-top: -30px;
-  background-color: antiquewhite;
-  
 }
 
 .category-grid {
@@ -378,9 +363,7 @@ body {
 .choose-section{
 }
 
-
 .why-hero-text {
-  font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 50px;
   color: darkred;
@@ -432,7 +415,7 @@ body {
 }
 
 .highlight-orange {
-  background-color: #ff4500; /* red-orange */
+  background-color: #ff4500;
   color: white;
   padding: 2px 6px;
   border-radius: 6px;
@@ -467,11 +450,9 @@ body {
 
 
 .hire-section h3 {
-  font-family: 'Playfair Display', serif;
   font-size: 48px;
   font-weight: 900;
   line-height: 1.2;
-  color: black;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   display: inline-block;
@@ -494,7 +475,6 @@ body {
   border-radius: 10px;
   padding: 5px 10px;
 }
-
 
 /*Paragraph with text colors */
 
@@ -581,7 +561,6 @@ body {
 }
 
 .footer-list li a {
-  color: black;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
