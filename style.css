@@ -22,8 +22,23 @@ body {
   height: 100vh;
   line-height: 1.6;
   scroll-behavior: smooth;
-  /* smooth page scrolling */
 }
+
+/* Shared full-screen centered section */
+.fullscreen-center {
+  background-color: antiquewhite;
+  text-align: center;
+  min-height: 100vh;         
+  display: flex;            
+  flex-direction: column;    
+  justify-content: center;   
+  align-items: center;      
+  padding: 0 20px;       
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Playfair Display', serif;
+}
+
 
 /* Hide skip link (optional accessibility) */
 .skip-link {
