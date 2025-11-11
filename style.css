@@ -27,7 +27,6 @@ body {
 
 /* Shared full-screen centered section */
 .fullscreen-center {
-  background-color: antiquewhite;
   text-align: center;
   min-height: 100vh;         
   display: flex;            
@@ -35,9 +34,7 @@ body {
   justify-content: center;   
   align-items: center;      
   padding: 0 20px;       
-  box-sizing: border-box;
   overflow: hidden;
-  font-family: 'Playfair Display', serif;
 }
 
 
@@ -51,7 +48,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 100; /* keeps it above other sections */
-  background-color: antiquewhite;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,7 +126,6 @@ body {
 
 .menu-links a {
   text-decoration: none;
-  font-size: 36px;
   transition: color 0.3s ease;
   font-weight: 900;
   font-size: 3rem;
@@ -207,11 +202,9 @@ body {
   background-color: darkred;
 }
 .build-btn{
-  font-family: 'Playfair Display', serif;
 }
 
 .donate-btn{
-  font-family: 'Playfair Display', serif;
 }
 
 /*About Gallery Section*/
@@ -336,7 +329,6 @@ body {
 }
 
 .category-card h3 {
-  color: black;
   font-size: 1.1em;
   margin-top: 8px;
 }
