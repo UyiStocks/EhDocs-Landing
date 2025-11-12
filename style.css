@@ -81,6 +81,7 @@ body {
 /* Fullscreen overlay menu */
 .menu-overlay {
   position: fixed;
+  
   inset: 0;
   background-color: rgba(250, 235, 215, 0.98);
   display: none;
@@ -122,6 +123,7 @@ body {
 
 .menu-links li {
   margin: 20px 0;
+  color: black;
 }
 
 .menu-links a {
