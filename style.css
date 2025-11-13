@@ -142,11 +142,6 @@ body {
   color: darkred;
 }
 
-/* Hero section */
-.hero {
-}
-
-
 /* Hero main text */
 .hero-text {
   font-weight: 900;
@@ -203,15 +198,8 @@ body {
 .hero-buttons button:hover {
   background-color: darkred;
 }
-.build-btn{
-}
-
-.donate-btn{
-}
 
 /*About Gallery Section*/
-.about-gallery {
-}
 
 /* Text section */
 .about-text {
@@ -262,6 +250,7 @@ body {
 }
 
 .category-combined{
+  text-decoration: none;
 }
 
 
