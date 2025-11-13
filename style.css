@@ -288,9 +288,9 @@ body {
 
 /* Category cards */
 .category-card {
-  display: block;           /* ensures <a> behaves like a div */
-  text-decoration: none;    /* removes underline */
-  color: inherit;           /* keeps text color */
+  display: block;           /* ensure <a> behaves like a block */
+  text-decoration: none;    /* remove underline */
+  color: inherit;           /* keep text color */
   cursor: pointer;
   background: antiquewhite;
   border-radius: 15px;
@@ -302,7 +302,6 @@ body {
 .category-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 6px 18px black;
-  
 }
 
 .category-image {
@@ -322,6 +321,23 @@ body {
   font-size: 1.1em;
   margin-top: 8px;
 }
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .category-grid {
+    gap: 15px;
+  }
+  .category-card {
+    padding: 15px 10px;
+  }
+  .category-image {
+    height: 120px;
+  }
+  .category-card h3 {
+    font-size: 1em;
+  }
+}
+
 
 /* Mobile responsive */
 @media (max-width: 480px) {
@@ -494,9 +510,6 @@ body {
 }
 
 /*Footer Section*/
-
-  .Ehdocsfooter{
-}
 
 .footer-container {
   display: grid;
