@@ -6,13 +6,33 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo">EhDocs</div>
-  </header>
+  <!-- Skip link for accessibility -->
+  <a href="#home" class="skip-link">Skip to main content</a>
 
+   <header class="header">
+    <!-- Logo -->
+    <div class="logo"></div>
+
+    <!-- Open menu button -->
+    <button class="menu-btn" id="openMenu" aria-label="Open navigation menu">
+      Menu
+    </button>
+
+    <!-- Full-screen navigation overlay -->
+    <nav class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <button class="close-btn" id="closeMenu" aria-label="Close menu">&times; Close</button>
+      <ul class="menu-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="#support">Support Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
   <main class="employee-main">
     <!-- Sidebar with document types -->
     <aside class="document-list">
+      
       <ul>
         <li data-doc="resume" class="doc-item active">Resume</li>
         <li data-doc="cover-letter" class="doc-item">Cover Letter</li>
