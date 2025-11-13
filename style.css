@@ -294,7 +294,6 @@ body {
   cursor: pointer;
   background: antiquewhite;
   border-radius: 15px;
-  box-shadow: 0 4px 10px black;
   padding: 20px 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
