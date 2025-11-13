@@ -288,13 +288,13 @@ body {
 
 /* Category cards */
 .category-card {
-  display: block;           /* ensure <a> behaves like a block */
-  text-decoration: none;    /* remove underline */
-  color: inherit;           /* keep text color */
+  display: block;          
+  text-decoration: none; 
+  color: inherit;
   cursor: pointer;
   background: antiquewhite;
   border-radius: 15px;
-  box-shadow: 0 4px 10px orangered;
+  box-shadow: 0 4px 10px black;
   padding: 20px 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -356,9 +356,6 @@ body {
 }
 
 /*Why CHOOSE US*/
-
-.choose-section{
-}
 
 .why-hero-text {
   font-weight: 900;
