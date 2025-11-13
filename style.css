@@ -249,14 +249,6 @@ body {
   }
 }
 
-.category-combined{
-  text-decoration: none;
-  display: block;
-  color: inherit;
-  cursor: pointer;
-}
-
-
 /* Category intro */
 .category-intro {
   text-align: center;
@@ -296,6 +288,10 @@ body {
 
 /* Category cards */
 .category-card {
+  display: block;           /* ensures <a> behaves like a div */
+  text-decoration: none;    /* removes underline */
+  color: inherit;           /* keeps text color */
+  cursor: pointer;
   background: antiquewhite;
   border-radius: 15px;
   box-shadow: 0 4px 10px orangered;
