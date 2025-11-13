@@ -1,3 +1,105 @@
+/* Hide skip link */
+.skip-link {
+  display: none;
+}
+
+/* Sticky header sticky */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* keeps it above other sections */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+/* Logo text */
+.logo {
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+/* Menu button */
+.menu-btn {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.menu-btn:hover {
+  background: darkred;
+}
+
+/* Fullscreen overlay menu */
+.menu-overlay {
+  position: fixed;
+  
+  inset: 0;
+  background-color: rgba(250, 235, 215, 0.98);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+/* When active */
+.menu-overlay.active {
+  display: flex;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+  background: darkred;
+}
+
+/* Menu links */
+.menu-links {
+  list-style: none;
+  text-align: center;
+}
+
+.menu-links li {
+  margin: 20px 0;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+  font-weight: 900;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+
+.menu-links a:hover {
+  color: darkred;
+}
+
 /* Contact Us Section */
 .contact-section {
   background-color: antiquewhite;
