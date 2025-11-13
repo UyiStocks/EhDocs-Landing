@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EhDocs - Employee Documents</title>
+  <link rel="stylesheet" href="employee.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">EhDocs</div>
+  </header>
+
+  <main class="employee-main">
+    <!-- Sidebar with document types -->
+    <aside class="document-list">
+      <ul>
+        <li data-doc="resume" class="doc-item active">Resume</li>
+        <li data-doc="cover-letter" class="doc-item">Cover Letter</li>
+        <li data-doc="resignation-letter" class="doc-item">Resignation Letter</li>
+      </ul>
+    </aside>
+
+    <!-- Preview section -->
+    <section class="document-preview">
+      <p class="preview-message">Select a document type from the left to see templates.</p>
+    </section>
+  </main>
+
+</body>
+</html>
