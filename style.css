@@ -251,6 +251,9 @@ body {
 
 .category-combined{
   text-decoration: none;
+  display: block;
+  color: inherit;
+  cursor: pointer;
 }
 
 
