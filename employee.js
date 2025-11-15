@@ -9,9 +9,9 @@ closeMenu.addEventListener('click', () => menuOverlay.classList.remove('active')
 // Template data
 const templates = {
   resume: [
-    { img: 'resume1.jpeg', id: 'resume1' },
-    { img: 'resume1.jpeg', id: 'resume2' }
-  ],
+  {img: 'resume1.png', id: 'resume1'},
+  {img: 'resume2.png', id: 'resume2'}
+],
 
   'cover-letter': [
     { img: 'template1.png', id: 'cover1' },
