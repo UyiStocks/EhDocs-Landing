@@ -9,17 +9,11 @@ closeMenu.addEventListener('click', () => menuOverlay.classList.remove('active')
 // Template data
 const templates = {
   resume: [
-  {img: 'resume1.png', id: 'resume1'},
-  {img: 'resume2.png', id: 'resume2'}
-],
-
-  'cover-letter': [
-    { img: 'template1.png', id: 'cover1' },
-    { img: 'template2.png', id: 'cover2' }
+    { img: 'resume1.png', id: 'resume1' },
+    { img: 'resume2.png', id: 'resume2' }
   ],
 
-  'resignation-letter': [
-    { img: 'template1.png', id: 'resign1' },
-    { img: 'template2.png', id: 'resign2' }
-  ]
+  'cover-letter': [],
+
+  'resignation-letter': []
 };
