@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Template data (resumes only for now)
   const templates = {
     resume: [
-      { img: 'templates/resume1.png', id: 'resume1', name: 'Modern Resume' },
-      { img: 'templates/resume2.png', id: 'resume2', name: 'Classic Resume' }
+      { img: 'resume1.png', id: 'resume1', name: 'Modern Resume' },
+      { img: 'resume2.png', id: 'resume2', name: 'Classic Resume' }
     ],
     'cover-letter': [],
     'resignation-letter': []
